@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        span{
+            margin-left: 6px;
+        }
+        #rating2{
+            margin-left: 10px;
+            margin-top: -100px;
+        }
+        .radio-inline{
+            display: inline;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <fieldset>
+            <legend>Feedback Form</legend>
+
+            <label for="fname" >Name:</label>  
+            <input type="text" id="fname" name="fname" placeholder="Enter Full Name"><br><br>
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email"><br><br>
+            <label for="ftype">Feedback Type : </label>
+            <select id="ftype" name="ftype">
+                <option value="Bug">Bug Report</option>
+                <option value="Feature">Feature Request</option>
+                <option value="gfeedback">General Feedback</option>
+            </select><br><br>
+            <label for="Rating" >Rating:</label>
+            <label class="radio-inline">
+                <input type="radio" name="option 1" id="one">
+                
+            </label>
+            <label class="radio-inline">
+                <input type="radio" name="option 1" id="two">
+            </label>
+            <label class="radio-inline">
+                <input type="radio" name="option 1" id="three">
+            </label>
+            <label class="radio-inline">
+                <input type="radio" name="option 1" id="four">
+                <label class="radio-inline">
+                    <input type="radio" name="option 1" id="five">
+                </label>
+            </label><br>
+           <label for="one" style="margin-left:58px;">1</label>
+           <label for="two" style="margin-left:13px;">2</label>
+           <label for="three" style="margin-left:13px;">3</label>
+           <label for="four" style="margin-left:13px;">4</label>
+           <label for="five" style="margin-left:13px;">5</label>
+           <br><br>
+           <label for="description">Feedback description :-</label><br><br>
+           <textarea name="description" id="description" size="100"></textarea>
+           <br><br>
+           <label for="recommend">Would You Recommend Us ?</label>
+           <input type="checkbox">Yes
+           <br><br>
+           <label for="contactMethod">Preferred Contact</label>
+           <select id="contactMethod" name="contactMethod">
+            <option value="Email">Email</option>
+            <option value="phone">Phone</option>
+            <option value="None">None</option>
+           </select>
+           <br><br>
+           <input type="submit" value="Submit">
+           <br><br>
+           <input type="reset" value="Clear"> Resets all fields to their default values.
+        </fieldset>
+
+
+
+    </form>
+</body>
+</html>
